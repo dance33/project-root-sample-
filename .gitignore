@@ -1,6 +1,11 @@
 # Dependencies
 node_modules/
 
+# Build output
+dist/
+public/*.html
+public/assets/css/
+
 # OS files
 .DS_Store
 Thumbs.db

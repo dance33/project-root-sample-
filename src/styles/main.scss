@@ -1,21 +1,3 @@
-// main.scss
-
-// 基礎設定
-@import 'base/reset';
-@import 'base/variables';
-@import 'base/mixins';
-
-// 版面結構
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/grid';
-
-// 元件
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
-
-// 頁面
-@import 'pages/home';
-@import 'pages/search';
-@import 'pages/product';
+// 樣式範例暫緩建立，先以此檔案作為 sass 編譯入口的佔位檔，
+// 確保 `npm run build` / `npm run scss:build` 不因缺少入口檔而失敗。
+// 待 base/layout/components/pages 分層內容補上後，於此依序 @use。

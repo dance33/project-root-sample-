@@ -3,8 +3,30 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/scripts/main.js",
+  "type": "module",
   "scripts": {
+    "dev": "npm run scss:watch",
+    "build": "npm run scss:build && npm run html:build",
+    "scss:watch": "sass --watch src/styles/main.scss:public/assets/css/main.css --style=expanded",
+    "scss:build": "sass src/styles/main.scss:public/assets/css/main.css --style=compressed --no-source-map",
+    "html:build": "node scripts/build-pages.js",
+    "html:watch": "node --watch scripts/build-pages.js",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"src/styles/**/*.scss\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.8.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.11.0",
+    "prettier": "^3.9.6",
+    "sass": "^1.93.2",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard-scss": "^17.0.0"
+  }
 }

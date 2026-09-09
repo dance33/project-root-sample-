@@ -1,32 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
-    <meta charset="UTF-8">
-    <title>商品詳目</title>
-    <link rel="stylesheet" href="../src/styles/main.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>深夜食堂（電子書） | Bookstore</title>
+<meta name="description" content="深夜食堂電子書介紹，附試閱與讀者評價。" />
+<link rel="canonical" href="https://example.com/product.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="深夜食堂（電子書） | Bookstore" />
+<meta property="og:description" content="深夜食堂電子書介紹，附試閱與讀者評價。" />
+<meta property="og:image" content="/assets/images/og/product-midnight-diner.png" />
+<meta property="og:url" content="https://example.com/product.html" />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="/favicon.ico" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "深夜食堂（電子書） | Bookstore",
+  "description": "深夜食堂電子書介紹，附試閱與讀者評價。",
+  "image": "/assets/images/og/product-midnight-diner.png",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "TWD",
+    "price": "199",
+    "availability": "https://schema.org/InStock",
+    "url": "https://example.com/product.html"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "書籍列表",
+      "item": "https://example.com/catalog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "深夜食堂（電子書） | Bookstore",
+      "item": "https://example.com/product.html"
+    }
+  ]
+}
+</script>
+
 </head>
+<body data-page="product">
+  <a class="u-visuallyHidden u-skipLink" href="#main-content">跳到主要內容</a>
+<header role="banner" class="o-Header">
+  <div class="l-Container o-Header__inner">
+    <a class="o-Header__logo" href="/index.html">Bookstore</a>
+    <nav class="o-Nav" aria-label="主導覽">
+      <ul class="o-Nav__list">
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/index.html">首頁</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/catalog.html">書籍列表</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/cart.html">購物車</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/login.html">會員登入</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<body>
-    <header class="layout-header">
-        <h1>電子書詳目</h1>
-    </header>
 
-    <main class="layout-main">
-        <section class="section-product">
-            <div class="card card--highlight">
-                <div class="card-header">電子書標題</div>
-                <div class="card-body">
-                    <p>作者：XXX</p>
-                    <p>簡介：這是一本精彩的電子書。</p>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">立即購買</button>
-                    <button class="btn btn-outline">加入收藏</button>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main id="main-content">
+    <div class="l-Container o-ProductCard--horizontal">
+      <img class="o-ProductCard__cover" src="/assets/images/product/midnight-diner.jpg" alt="深夜食堂 電子書封面" />
+      <div class="o-ProductCard__info">
+        <h1 class="o-ProductCard__title">深夜食堂（電子書）</h1>
+        <p class="o-ProductCard__desc">商品描述範例內容，實際內容由前端切版階段補上。</p>
+        <p class="m-PriceTag"><span class="m-PriceTag__current">NT$199</span></p>
+        <button class="a-Btn a-Btn--primary" type="button">加入購物車</button>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="o-Footer">
+  <div class="l-Container o-Footer__inner">
+    <p class="o-Footer__copyright">&copy; 2026 Bookstore. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- 頁面互動腳本：待 src/scripts/main.js 建立後於此掛載 -->
 </body>
-
 </html>

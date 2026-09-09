@@ -13,9 +13,14 @@
 - 套件管理：npm / yarn
 
 ## 資料夾結構
+- `src/pages/<module>/` → 頁面原始檔（依模組分子資料夾）
+- `src/partials/` → 跨頁共用區塊（head meta／導覽列／頁尾／結構化資料），由 `scripts/build-pages.js` 合併
 - `src/styles/` → SCSS 樣式
 - `src/scripts/` → JS 邏輯
+- `public/` → 建置產物（`npm run build` 產生），非原始檔
 - `docs/` → 文件與規範
+
+完整規劃見 [`docs/folder-structure.md`](folder-structure.md)。
 
 ## 功能模組
 - `card` → 電子書展示卡片
@@ -28,5 +33,5 @@
 - 測試：ZZZ
 
 ## 注意事項
-- class 命名遵循 `naming-rules.md`
+- class 命名遵循 [`docs/style-naming-rules.md`](style-naming-rules.md)（ABEM）
 - 更新日誌請同步至 `changelog.md`

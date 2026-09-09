@@ -1,31 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
 <head>
-    <meta charset="UTF-8">
-    <title>電子書系統首頁</title>
-    <link rel="stylesheet" href="../src/styles/main.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>首頁 | Bookstore</title>
+<meta name="description" content="探索多元電子書分類、熱門書單與限時活動。" />
+<link rel="canonical" href="https://example.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="首頁 | Bookstore" />
+<meta property="og:description" content="探索多元電子書分類、熱門書單與限時活動。" />
+<meta property="og:image" content="/assets/images/og/home.png" />
+<meta property="og:url" content="https://example.com/" />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="/favicon.ico" />
+
 </head>
+<body data-page="home">
+  <a class="u-visuallyHidden u-skipLink" href="#main-content">跳到主要內容</a>
+<header role="banner" class="o-Header">
+  <div class="l-Container o-Header__inner">
+    <a class="o-Header__logo" href="/index.html">Bookstore</a>
+    <nav class="o-Nav" aria-label="主導覽">
+      <ul class="o-Nav__list">
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/index.html">首頁</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/catalog.html">書籍列表</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/cart.html">購物車</a></li>
+        <li class="o-Nav__item"><a class="o-Nav__link" href="/login.html">會員登入</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<body>
-    <header class="layout-header">
-        <h1>電子書系統</h1>
-        <nav class="nav-bar">
-            <a href="search.html" class="nav-link">搜尋</a>
-            <a href="product.html" class="nav-link">商品詳目</a>
-        </nav>
-    </header>
 
-    <main class="layout-main">
-        <section class="section-hero">
-            <h2>歡迎使用線上電子書閱讀器</h2>
-            <button class="btn btn-primary">開始探索</button>
-        </section>
-    </main>
+  <main id="main-content">
+    <section class="o-Hero l-Container">
+      <h1 class="o-Hero__title">歡迎來到 Bookstore</h1>
+      <p class="o-Hero__subtitle">這是首頁範例內容，實際內容由前端切版階段補上。</p>
+    </section>
+  </main>
 
-    <footer class="layout-footer">
-        <p>&copy; 2026 電子書系統</p>
-    </footer>
+  <footer role="contentinfo" class="o-Footer">
+  <div class="l-Container o-Footer__inner">
+    <p class="o-Footer__copyright">&copy; 2026 Bookstore. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- 頁面互動腳本：待 src/scripts/main.js 建立後於此掛載 -->
 </body>
-
 </html>
